@@ -10,6 +10,10 @@ public class EmpleadoBR {
     public static float calculaSalarioBruto(TipoEmpleado tipus, float ventasMes, float horasExtra) {
         if (tipus == null) {
             return salario = -1;
+        } else if (ventasMes == -1) {
+            return salario = -1;
+        } else if (horasExtra == -1) {
+            return salario = -1;
         } else {
             if (tipus == TipoEmpleado.venedor){
                  salario = 1000;

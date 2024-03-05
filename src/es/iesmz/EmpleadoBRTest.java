@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 public class EmpleadoBRTest {
+    // Primer Commit
     @Test
     public void calcularSalarioNeto1() {
         assertEquals(1640, EmpleadoBR.calculaSalarioNeto(2000));
@@ -30,6 +31,7 @@ public class EmpleadoBRTest {
         assertEquals(840, EmpleadoBR.calculaSalarioNeto(1000), 0.0010f);
     }
 
+    // Segundo Commit
     @Test
     public void calcularSalarioNeto6() {
         assertEquals(999.99f, EmpleadoBR.calculaSalarioNeto(999.99f), 0.0010f);
@@ -80,7 +82,27 @@ public class EmpleadoBRTest {
     public void calcularSalarioBruto7() {
         assertEquals(1500, EmpleadoBR.calculaSalarioBruto(TipoEmpleado.encarregat,500, 0), 0.0010f);
     }
-    
+
+    // Cuarto Commit
+    @Test
+    public void calcularSalarioBruto8() {
+        assertEquals(1660, EmpleadoBR.calculaSalarioBruto(TipoEmpleado.encarregat,0, 8), 0.0010f);
+    }
+
+    @Test
+    public void calcularSalarioBruto9() {
+        assertEquals(-1, EmpleadoBR.calculaSalarioBruto(TipoEmpleado.venedor,-1, 8), 0.0010f);
+    }
+
+    @Test
+    public void calcularSalarioBruto10() {
+        assertEquals(-1, EmpleadoBR.calculaSalarioBruto(TipoEmpleado.venedor,1500, -1), 0.0010f);
+    }
+
+    @Test
+    public void calcularSalarioBruto11() {
+        assertEquals(-1, EmpleadoBR.calculaSalarioBruto(null,1500, 8), 0.0010f);
+    }
 
 
 
