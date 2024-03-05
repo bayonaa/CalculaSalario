@@ -12,19 +12,19 @@ public class EmpleadoBR {
             return salario = -1;
         } else {
             if (tipus == TipoEmpleado.venedor){
-                return salario = 1000;
+                 salario = 1000;
             } else if (tipus == TipoEmpleado.encarregat) {
-                return salario = 1500;
+                 salario = 1500;
             }
 
-            if (ventasMes >= 1000) {
-                return salario += 100;
+            if (ventasMes >= 1000 && ventasMes < 1500) {
+                 salario += 100;
             } else if (ventasMes >= 1500) {
-                return salario+= 200;
+                 salario+= 200;
             }
 
             if (horasExtra != 0){
-                return salario += horasExtra * 20;
+                 salario += horasExtra * 20;
             }
         }
         return salario;
@@ -48,6 +48,4 @@ public class EmpleadoBR {
         }
         return salarioBruto;
     }
-
-
 }

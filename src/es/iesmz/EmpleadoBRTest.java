@@ -30,6 +30,39 @@ public class EmpleadoBRTest {
         assertEquals(840, EmpleadoBR.calculaSalarioNeto(1000), 0.0010f);
     }
 
+    @Test
+    public void calcularSalarioNeto6() {
+        assertEquals(999.99f, EmpleadoBR.calculaSalarioNeto(999.99f), 0.0010f);
+    }
+
+    @Test
+    public void calcularSalarioNeto7() {
+        assertEquals(0, EmpleadoBR.calculaSalarioNeto(0), 0.0010f);
+    }
+
+    @Test
+    public void calcularSalarioNeto8() {
+        assertEquals(-1, EmpleadoBR.calculaSalarioNeto(-1), 0.0010f);
+    }
+
+    @Test
+    public void calcularSalarioBruto1() {
+        assertEquals(1360, EmpleadoBR.calculaSalarioBruto(TipoEmpleado.venedor,2000, 8), 0.0010f);
+    }
+
+    @Test
+    public void calcularSalarioBruto2() {
+        assertEquals(1260, EmpleadoBR.calculaSalarioBruto(TipoEmpleado.venedor,1500, 3), 0.0010f);
+    }
+
+
+
+
+
+
+
+
+
 
 
 
